@@ -1,3 +1,5 @@
+// alert("Copy Text part 'COMING SOON'");
+
 const hexColor = document.querySelector('.hex');
 const rgbColor = document.querySelector('.rgb');
 const generateBtn = document.querySelector('.btn');
