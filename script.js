@@ -13,33 +13,24 @@ function randomRgb(){
     let b = Math.floor(Math.random() * 256);
     let newColor = `rgb(${r}, ${g}, ${b})`;
     return newColor;
-
-    function newhexColor(){
-    let r = Math.floor(Math.random() * 256).toString(16);
-    let g = Math.floor(Math.random() * 256).toString(16);
-    let b = Math.floor(Math.random() * 256).toString(16);
-    r = (r.length === 2) ? r : '0' + r;
-    g = (g.length === 2) ? g : '0' + g;
-    b = (b.length === 2) ? b : '0' + b;
-    let newHexColor = `#${r}${g}${b}`;
-    return newHexColor;
-}
 }
 
-
+    let red = Math.floor(Math.random() * 256).toString(16);
+    let green = Math.floor(Math.random() * 256).toString(16);
+    let blue = Math.floor(Math.random() * 256).toString(16);
+    red = (red.length === 2) ? red : '0' + red;
+    green = (green.length === 2) ? green : '0' + green;
+    blue = (blue.length === 2) ? blue : '0' + blue;
+    let newHexColor = `#${red}${green}${blue}`;
+    console.log(newHexColor);
 
 generateBtn.addEventListener('click', () => {
     let color = randomRgb();
     rgbColor.innerText = color;
     colorPallate.style.backgroundColor = color;
-    document.body.style.backgroundColor = color;
+    // document.body.style.backgroundColor = color;
     // let nextColor = newhexColor();
     // hexColor.innerText = nextColor;
-})
-generateBtn.addEventListener('click', () => {
-    colorPallate.style.backgroundColor = color;
-    let nextColor = newhexColor();
-    hexColor.innerText = nextColor;
 })
 
 

@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="/style.css">
     <title>Random Color Generator</title>
 </head>
-<body class="sm:p-4 lg:px-20 xl:px-72 2xl:px-96 bg-opacity-50">
+<body class="sm:p-4 lg:px-20 xl:px-72 2xl:px-96 bg-auto bg-image bg-fixed bg-no-repeat sm:bg-cover">
     <h1 class="heading text-center font-semibold font-raleway text-2xl sm:text-4xl -tracking-tighter mt-10">
         Generate Random Color
     </h1>
 
-    <section class="whole-container grid grid-cols-1 sm:grid sm:grid-cols-2 px-8 py-3 gap-2 sm:gap-10 mt-6 md:p-14 sm:border-2 sm:shadow-lg sm:shadow-gray-400 sm:mt-16 sm:p-10 bg-slate-100">
-        <div class="color-pallate h-56 bg-blue-300"></div>
-        <div class="color-codes h-56 text-left flex flex-col justify-center gap-8">
-            <h2 class="font-poppins font-medium text-xl">HEX: <span class="hex font-poppins font-medium text-xl ml-6"></span></h2>
-            <h2 class="font-poppins font-medium text-xl">RGB: <span class="rgb font-poppins font-medium text-xl ml-6"></span></h2>
+    <section class="sm:grid sm:grid-cols-2 sm:gap-5">
+    <main>
+        <section class="whole-container grid grid-cols-2 sm:grid sm:grid-cols-2 px-10 py-10 gap-2 sm:gap-10 mt-6 md:p-14 sm:border-2 sm:shadow-lg sm:shadow-gray-400 sm:mt-16 sm:p-10 bg-slate-100 mx-2">
+            <div class="color-pallate h-24 w-24 bg-blue-300 rounded-lg"></div>
+            <div class="color-codes -ml-10 mt-8">
+                <h2 class="font-poppins font-medium text-xl">HEX: <span class="hex font-poppins font-medium text-base ml-3">hgjhg</span></h2>
+            </div>
+        </section>
+        <div class="flex flex-col justify-center items-center md:mt-8 mt-5">
+            <button class="btn font-poppins tracking-widest uppercase font-bold text-lg bg-sky-900 rounded-md px-6 py-4 text-white">Generate HEX</button>
         </div>
-        <button class="btn font-poppins tracking-widest uppercase font-bold text-lg bg-sky-900 mx-10 py-4 text-white">Generate Color</button>
-        <!-- <button class="btn2 font-poppins tracking-widest uppercase font-bold text-lg bg-sky-900 mx-10 py-4 text-white">Generate Color</button> -->
+    </main>
+    <main>   
+    <section class="whole-container grid grid-cols-2 sm:grid sm:grid-cols-2 px-10 py-10 gap-2 sm:gap-10 mt-6 md:p-14 sm:border-2 sm:shadow-lg sm:shadow-gray-400 sm:mt-16 sm:p-10 bg-slate-100 mx-2">
+            <div class="color-pallate h-24 w-24 bg-blue-300 rounded-lg"></div>
+            <div class="color-codes flex">
+                <h2 class="font-poppins font-medium text-xl -ml-10 mt-8">RGB: <span class="rgb font-poppins font-medium text-base ml-3"></span></h2>
+            </div>
+        </section>
+        <div class="flex flex-col justify-center items-center md:mt-8 mt-5">
+            <button class="btn font-poppins tracking-widest uppercase font-bold text-lg bg-sky-900 rounded-md px-6 py-4 text-white">Generate HEX</button>
+        </div>
+    </main>
     </section>
+
+    
     <script src="/script.js"></script>
 </body>
 </html>

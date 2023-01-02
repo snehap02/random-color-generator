@@ -7,6 +7,9 @@ module.exports = {
         poppins: 'Poppins',
         raleway: 'Raleway',
         spaceMono: 'Space Mono'
+      },
+      backgroundImage:{
+        image: "url('/images/bg.jpg')"
       }
     },
   },
