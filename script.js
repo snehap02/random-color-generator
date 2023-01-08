@@ -28,12 +28,14 @@ generateBtn.addEventListener('click', () => {
     let color = randomRgb();
     rgbColor.innerText = color;
     colorPallate.style.backgroundColor = color;
+    rgbColor.style.color = color;
 })
 
 secondBtn.addEventListener('click', () => {
     let hexCol = randomHex();
     hexColor.innerText = hexCol;
     colorPallate.style.backgroundColor = hexCol;
+    hexColor.style.color = hexCol;
 })
 
 
