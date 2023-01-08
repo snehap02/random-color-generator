@@ -3,9 +3,9 @@
 const hexColor = document.querySelector('.hex');
 const rgbColor = document.querySelector('.rgb');
 const generateBtn = document.querySelector('.btn');
-// const secondBtn = document.querySelector('.btn2');
+const secondBtn = document.querySelector('.btn1');
 const colorPallate = document.querySelector('.color-pallate');
-const colorCode = document.querySelector('.color-codes')
+const colorCode = document.querySelector('.color-codes');
 
 function randomRgb(){
     let r = Math.floor(Math.random() * 256);
